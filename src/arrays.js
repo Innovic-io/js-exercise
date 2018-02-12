@@ -65,3 +65,17 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 
 var m=fruits.length;    
 console.log(m);
+
+// for a given array
+var matrix = [
+ [1, 2, 3, 4],
+ [21, 345, 11, 33],
+ [91, 22, 13, 34],
+];
+
+// Tasks
+// 1. multiply each element by 2
+// 2. decrese each element by 10
+// 3. Filter out all elements less than 40
+// 4. Create function which will locate element in matix.
+
