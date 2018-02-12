@@ -80,3 +80,8 @@ try {
     console.log(e);
 }
 console.log(e);
+
+// Task: Write difference between let, var and cont variable declaration
+var myName = 'Jovana';
+const myRealName = 'Jovana';
+let myRealRealName = 'Jovana';
