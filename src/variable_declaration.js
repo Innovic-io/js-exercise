@@ -29,3 +29,9 @@ console.log(car.name,car.type);
 console.log(z);
 console.log(t);
 console.log(person.address.street);
+
+// Tasks:
+// Write function which capitalize first letter of given variable
+// jovana -> capitalize('jovana') -> Jovana
+// Write function that reverse your name: Jovana -> anavoJ
+// Write function that replace character a with *: Jovana -> Jov*n*
