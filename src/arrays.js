@@ -266,3 +266,101 @@ console.log(r1);
 
 var r2= [1,2,3,4,5,6,7,8,9].copyWithin(0,4).copyWithin(4,-6);
 console.log(r2);
+
+
+console.log('Example for  loop array')
+
+var my_array = ['a', 'b', 'c'];
+for (var i=0; i<my_array.length; i++){
+    console.log('1.example ', my_array[i]);
+}
+
+
+my_array.forEach(function(current_value) {
+    console.log('2.example ', current_value)
+    
+});
+
+
+//Let’s start with an example using forEach() to loop through an array of numbers. This example checks if each number in the javascript array is even or odd
+var array_of_numbers =[5, 7, 1, 9, 8, 5,4,2];
+
+array_of_numbers.forEach(function(current_value, index, initial_array){
+    if(current_value % 2){
+        console.log('odd');
+    }else{
+        console.log('even');
+    }
+});
+
+var even_numbers =[];
+var odd_numbers =[];
+
+function separate_evens_from_odds(value){
+    if(value % 2){
+        odd_numbers.push(value);
+    
+    }else{
+        even_numbers.push(value);
+    }
+
+}
+
+ var some_array=[5,7,34,22,89,64,9,3,48,100,76,33,12,1];
+ some_array.forEach(separate_evens_from_odds);
+ 
+ console.log(even_numbers);
+ console.log(odd_numbers);
+
+
+ var total_cost = 0;
+ 
+ function add__to_total_cost(amount){
+     total_cost+=amount.cost;
+ }
+
+ var shopping_cart_1=[
+    {
+
+    item : 'shirt',
+    cost : 23
+
+    },{
+     item: 'shorts',
+     cost: 24
+ }
+]
+
+
+var shopping_cart_2=[
+    {
+
+    item : 'cereal',
+    cost : 3
+
+    },{
+     item: 'milk',
+     cost: 4
+ },{
+    item: 'eggs',
+    cost: 5
+}
+]
+shopping_cart_1.forEach(add__to_total_cost);
+shopping_cart_2.forEach(add__to_total_cost);
+
+console.log(total_cost);
+
+var string_array=['hello', 'world'];
+for(var i=0; i<string_array.length; i++)
+console.log(string_array[i]);
+
+var sum =0;
+var obj={ prop1: 3, prop2: 9, prop3 : 5};
+
+ for (var item in obj ){
+     sum += item;
+ }
+ console.log(sum);
+
+ // nisam nasla puno primjera a nisam ni imala ideju kako bih mogla iskoristiit ovo za neke funkcije(losa koncentracija) :)
